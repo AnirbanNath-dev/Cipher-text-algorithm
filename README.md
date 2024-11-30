@@ -62,7 +62,7 @@ Plus, it’ll impress your friends when you casually start encrypting your text 
 
 - **Simple to understand:** You don’t need to be a tech wizard to grasp this.
 
-- **Customizable key:** Use any key you want (well, within reason... maybe not "password123", ok?).
+- **Customizable key:** Use any key you want (well, within reason... maybe not "password", ok?).
 
 - **Easy encryption/decryption:*** Encrypt your messages like a pro and reverse the process like a champ.
 
