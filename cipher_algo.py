@@ -62,21 +62,30 @@ def decrypt(text):
     return "".join(number_assign(result))
 
 def main():
-    print("\n\t\tTEXTS HERE ARE ENCRYPTED")
-    print("\t\t***********************\n\n")
+    print("\n\t\t\033[96mTEXTS HERE ARE ENCRYPTED")
+    print("\t\t************************\n\n\033[0m")
     while True:
-        option = input("Options:\n1.Encrypt\n2.Decrypt\n:")
+        option = input("Options:\n1.\033[31mEncrypt\033[0m\n2.\033[92mDecrypt\033[0m\n:")
         match option:
             case "1":
+
                 normal_text = input("Type text to encrypt : ")
-                
-                print(encrypt(normal_text))
+                print("Encrypting....")
+                sleep(2)
+
+                print(f"\n\033[31m{encrypt(normal_text)}\033[0m\n")
+
+                sleep(2)
 
             case "2":
                 encrypted_text = input("Type the encrypted text to decrypt : ")
-                
-                print(decrypt(encrypted_text))
+                print("Encrypting....")
+                sleep(2)
 
+                print(f"\n\033[92m{decrypt(encrypted_text)}\033[0m\n")
+
+                sleep(2)
+                
             case _:
                 print("Invalid Option!")
                 continue
