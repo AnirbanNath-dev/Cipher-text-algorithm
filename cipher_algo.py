@@ -65,7 +65,7 @@ def main():
     print("\n\t\t\033[96mTEXTS HERE ARE ENCRYPTED")
     print("\t\t************************\n\n\033[0m")
     while True:
-        option = input("Options:\n1.\033[31mEncrypt\033[0m\n2.\033[92mDecrypt\033[0m\n:")
+        option = input("Options:\n1.\033[31mEncrypt\033[0m\n2.\033[92mDecrypt\033[0m\n3.Exit\n:")
         match option:
             case "1":
 
@@ -79,13 +79,18 @@ def main():
 
             case "2":
                 encrypted_text = input("Type the encrypted text to decrypt : ")
-                print("Encrypting....")
+                print("Decrypting....")
                 sleep(2)
 
                 print(f"\n\033[92m{decrypt(encrypted_text)}\033[0m\n")
 
                 sleep(2)
-                
+
+            case "3":
+                print("Exiting...")
+                sleep(1)
+                break
+            
             case _:
                 print("Invalid Option!")
                 continue
