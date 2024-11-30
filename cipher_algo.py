@@ -5,7 +5,7 @@ alphabets = 'abcdefghijklmnopqrstuvwxyz'
 def key():
     try:
         with open("key.txt","r") as f:
-            return f.readline().lower()
+            return f.readline().strip().lower()
     except FileNotFoundError:
         return "default"
     
@@ -21,7 +21,7 @@ def number_assign(list):
     result = []
     for i in range(len(list)):
         if type(list[i]) == int:
-            result.append(alphabet_dict[list[i]%26 if list[i] % 26 != 0 else 1])
+            result.append(alphabet_dict[list[i]%26 if list[i] % 26 != 0 else 26])
         else:
             result.append(list[i])
     return result
