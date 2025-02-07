@@ -77,12 +77,28 @@ Just don’t try encrypting your entire shopping list with this for national sec
 
 And remember, no system is foolproof—except your secret cookie recipe. 🍪
 
+## Usage
+
+1. Clone the repository
+```bash
+git clone https://github.com/AnirbanNath-dev/Cipher-text-algorithm.git
+```
+
+2. Change the directory 
+```bash
+cd Cipher-text-algorithm
+```
+**Note: If you are in windows , simply run it by `python main.py`. If you are in linux/unix-based system, you can follow the later steps**
 
 
+```bash
+chmod +x exec.py
+```
 
-
-
-
-
+```bash
+./exec.py -h #help 
+./exec.py -e any_text #to encode
+./exec.py -d encoded_text #to decode
+```
 
 
